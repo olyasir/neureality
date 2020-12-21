@@ -80,7 +80,7 @@ def addProfileData(prof, writer):
     #print(prof.key_averages().table(sort_by="cpu_time_total", row_limit=40))
 
     out = Image.new("RGB", (2000, 3000), (255, 255, 255))
-    fnt = ImageFont.truetype("Pillow/Tests/fonts/FreeMono.ttf", 10)
+    fnt = ImageFont.truetype("./fonts/FreeMono.ttf", 10)
     d = ImageDraw.Draw(out)
     # draw multiline text
     keyev=prof.key_averages()
